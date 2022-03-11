@@ -17,3 +17,19 @@ var countOdds = function(low, high) {
 
   return count.length
 };
+
+
+The first one passes only 72 out of 84 tests so the second below is better.
+
+/**
+ * @param {number} low
+ * @param {number} high
+ * @return {number}
+ */
+var countOdds = function(low, high) {
+   if(low % 2 !== 0 || high %2 !== 0){
+            return (high - low)/2 + 1;
+        }
+        return (high - low)/2;
+    
+};
